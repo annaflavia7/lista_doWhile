@@ -11,10 +11,26 @@
     */
 
     //Entrada
-
+   let nome = prompt("Qual seu nome").trim();
+   while(nome.length < 3){
+    nome = prompt("Qual seu nome?") 
+   }
+   let idade = prompt("Qual sua idade?").trim()
+   while(idade > 1 || idade < 150){
+    idade = prompt("Qual sua idade?")
+   }
+   let salario = prompt("Qual seu salario?").trim()
+   while(salario > 1){
+    salario = prompt ("Qual seu salario?")
+   }
+   let sexo = prompt("Feminino ou Masculino?").trim();
+   while(sexo == Feminino || sexo == Masculino){
+    sexo = prompt("Feminino ou masculino?")
+   }
+   
 
     //Processamento
-
+   
 
     //Saída
 
