@@ -6,11 +6,18 @@
     */
 
     //Entrada
+    let populacaoA = 80000; //habitantes
+    let populacaoB = 200000; //habitantes
 
-
+    let anos = 0;
     //Processamento
+    do {
+        populacaoA = populacaoA * 1.03;
+        populacaoB = populacaoB * 1.015;
+        anos++;
+    } while (populacaoA < populacaoB);
 
-
+    alert(`Serão necessários ${anos} anos, para a população A (${populacaoA.toFixed(0)}) ultrapassar a população B (${populacaoB.toFixed(0)}) em habitantes.`);
     //Saída
 
 </script>

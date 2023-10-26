@@ -6,11 +6,19 @@
     */
 
     //Entrada
+    let senha = Number(prompt("Informe uma senha formada por  4 numeros inteiros"));
+    let inteiro = 1234
 
 
     //Processamento
-
-
+    while (senha != inteiro) {
+        alert("Senha incorreta!")
+        senha = Number(prompt("Informe uma senha formada por  4 numeros inteiros").trim());
+    }
+    while (senha == inteiro) {
+        alert("Senha Correta!")
+        senha = Number(prompt("Informe uma senha formada por  4 numeros inteiros").trim());
+    }
     //Saída
 
 </script>

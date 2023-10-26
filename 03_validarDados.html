@@ -16,22 +16,20 @@
     nome = prompt("Qual seu nome?") 
    }
    let idade = prompt("Qual sua idade?").trim()
-   while(idade > 1 || idade < 150){
+   while(idade < 0 || idade > 150){
     idade = prompt("Qual sua idade?")
    }
    let salario = prompt("Qual seu salario?").trim()
-   while(salario > 1){
+   while(salario < 0){
     salario = prompt ("Qual seu salario?")
    }
    let sexo = prompt("Feminino ou Masculino?").trim();
-   while(sexo == Feminino || sexo == Masculino){
+   while(sexo != "F" && sexo != "M"){
     sexo = prompt("Feminino ou masculino?")
    }
+   let estadoCivil = prompt("Qual seu estado civil? S-Solteiro, C-Casado,  V-Viuvo, D-Divorciado").trim();
+    while(estadoCivil != "S" && estadoCivil != "C" && estadoCivil != "V" && estadoCivil != "D" ){
+        estadoCivil = prompt("Qual seu estado civil? S-Solteiro, C-Casado,  V-Viuvo, D-Divorciado")
+    }
    
-
-    //Processamento
-   
-
-    //Saída
-
 </script>
